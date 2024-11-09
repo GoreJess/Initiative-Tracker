@@ -1,0 +1,132 @@
+#box3 {
+    background-color: transparent;
+    flex: 0.5;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4%; /* Space between inner boxes */
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 4%; /* Space between inner boxes */
+    margin: 0;
+}
+
+.inner-box {
+    flex: 1;
+    border-radius: 10px;
+    gap: 2%
+}
+
+.column-3-top {
+    display: flex;
+    height: 100%;
+    gap: 4%;
+}
+
+#inner-box1 {
+    flex: 0.5;
+}
+
+#column-3-top-left {
+    background-color: rgba(63,124,153,0.9);
+    flex: 1;
+    border-radius: 10px;
+    background-color: rgba(63,124,153,0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+}
+
+#roundTitle {
+    margin-block-start: 7px;
+    font-size: 100%;
+}
+
+#b3topr1 {
+    flex: 1;
+}
+
+#b3topr2 {
+    background-color: white;
+    color: black;
+    flex: 4;
+    margin-bottom: 15%;
+}
+
+
+#b3topr2p {
+    font-size: 225%;
+    font-weight: 900;
+}
+
+#column-3-top-right {
+    background-color: rgba(63,124,153,0.9);
+    flex: 1;
+    border-radius: 10px;
+}
+
+#b3tr-button {
+    height: 90%;
+    margin-top: 5px;
+    background-image: url(images/next-orange-button.png);
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    background-color: rgba(63,124,153,0.9);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: black; /* Text color */
+    border: transparent;
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 15px; /* Padding inside the button */
+    font-size: 16px; /* Font size of the button text */
+    font-weight: 600;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+#b3tr-button:active {
+    background-image: url(images/next-orange-button-pressed.png);
+}
+
+#inner-box2 {
+    background-color: rgba(63,124,153,0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+}
+
+#b3midr1 {
+    flex: 1;
+}
+
+#b3midr2 {
+    background-color: white;
+    color: black;
+    flex: 4;
+    margin-bottom: 10%;
+}
+
+#inner-box3 {
+    background-color: rgba(63,124,153,0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+}
+
+#picTitle {
+    font-size: 150%;
+    margin-block-start: 7px;
+}
+
+#b3botr1 {
+    flex: 1;
+}
+
+#b3botr2 {
+    background-color: white;
+    color: black;
+    flex: 4;
+    margin-bottom: 10%;
+}

@@ -1,0 +1,376 @@
+/* BACKGROUND IMAGE */
+body {
+        margin: 0;
+        background-image: url(images/fire-background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+p {
+    margin-block-start: 15px;
+    margin-block-end: 5px;
+    font-size: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+        align-items: center;
+        font-size: 150%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#hello {
+    color: white;
+}
+
+.container {
+    display: flex; /* Use flexbox layout */
+    height: 100vh; /* Full height of the viewport */
+    padding: 2%; /* Space around the container */
+    box-sizing: border-box; /* Include padding in the height calculation */
+    gap: 1.5%; /* Space between boxes */
+}
+
+.box {
+    flex: 1;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+}
+
+#box1 {
+    background-color: rgba(63,124,153,0.9);
+    flex: 1.75;
+    padding: 0;
+    margin: 0;
+}
+
+.box1-rows {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1%;
+    flex: 1;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+.box1-row1-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row1-col1 {
+    flex: 1;
+    border-top-left-radius: 10px;
+}
+
+#box1-row1-col2 {
+    flex: 1;
+}
+
+#b1r1c2-text {
+    font-size: 175%;
+    font-weight: 800;
+}
+
+#box1-row1-col3 {
+    flex: 1;
+    border-top-right-radius: 10px;
+}
+
+#b1r1c3-button {
+    margin-block-start: 8px;
+    margin-block-end: 1px;
+    background-image: url(images/orange-button.png);
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    background-color: rgba(63,124,153,0.9);
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: black; /* Text color */
+    border: transparent;
+    border-radius: 5px; /* Rounded corners */
+    padding: 9px 20px; /* Padding inside the button */
+    font-size: 22px; /* Font size of the button text */
+    font-weight: 600;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+#b1r1c3-button:active {
+    background-image: url(images/orange-button-pressed.png);
+}
+
+#box1-row2, #box1-row3, #box1-row4 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r2 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+input[type="number"] {
+    width: 30px; /* Width of the input box */
+    height: 30px;
+    padding: 1px; /* Padding inside the input box */
+    font-size: 18px; /* Font size of the input text */
+    font-weight: 300;
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Hide arrows in number input for WebKit browsers (Chrome, Edge, Safari) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.b1c1 {
+    flex: 1;
+    padding-top: 5px;
+}
+
+.b1c2 {
+    flex: 1;
+}
+
+.plus-button {
+    margin-block-start: 3px;
+    margin-block-end: 0px;
+    height: 40px;
+    width: 40px;
+    background-image: url(images/small-button.png);
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    background-color: transparent;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: black; /* Text color */
+    border: transparent;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 22px; /* Font size of the button text */
+    font-weight: 600;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.plus-button:active {
+    background-image: url(images/small-button-pressed.png);
+}
+
+.b1c3 {
+    flex: 1;
+}
+
+.eye-button {
+    margin-block-start: 3px;
+    margin-block-end: 0px;
+    height: 40px;
+    width: 40px;
+    background-image: url(images/small-button.png);
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    background-color: transparent;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    color: black; /* Text color */
+    border: transparent;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 22px; /* Font size of the button text */
+    font-weight: 600;
+    cursor: pointer; /* Cursor changes to pointer on hover */
+}
+
+.eye-button:active {
+    background-image: url(images/small-button-pressed.png);
+}
+
+.eyecon {
+    position: flex; /* Position absolutely within the button */
+    width: 80%; /* Adjust the size of the overlay image */
+    height: auto;
+    pointer-events: none; /* Make sure the fish image doesn't block the button's click */
+    background-color: transparent;
+    justify-content: center;
+}
+
+.b1c4 {
+    flex: 8;
+}
+
+.names {
+    width: 100%;
+    height: 50%;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    resize: none;
+    overflow-wrap: normal;
+    white-space: normal;
+    word-wrap: normal;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    text-align: left;  
+}
+
+.b1c5 {
+    flex: 6;
+}
+
+.b1r3 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row3 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r4 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row4 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r5 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row5 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r6 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row6 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r7 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row7 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r8 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row8 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r9 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row9 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r10 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row10 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+.b1r11 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    gap: 0%;
+    justify-content: center;
+    text-align: center; /* Center text horizontally */
+}
+
+#box1-row11 {
+    background-color: rgba(255,229,153);
+    color: black;
+    flex: 1;
+}
+
+#box1-row12 {
+    flex: 1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

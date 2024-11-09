@@ -1,0 +1,91 @@
+/* CONDITIONS MODAL */
+#conditionsModal {
+  display: none;
+  position: absolute;
+  top: 220px;
+  left: 120px;
+  height: 250px;
+  width: 475px;
+  background-color: rgba(63,124,153);
+  z-index: 20;
+}
+
+table {
+    width: 100%; /* Full width of the page */
+    height: 100%;
+    border-collapse: collapse; /* Remove gaps between cells */
+    box-shadow: 0 0 10px rgba(0,0,30,0.9);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+td {
+    padding: 0; /* No padding */
+}
+
+tr {
+    height: 100%;
+}
+
+.tableButton {
+  background-image: url(images/conditions-button.png);
+  background-size: cover; /* Cover the entire button */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  width: 100%; /* Make the button fill the entire cell */
+  height: 100%; /* Make the button stretch to the cell height */
+  padding: 4%; /* Adjust padding if needed */
+  font-size: 16px;
+  color: white;
+  border: none; /* Remove button border */
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.tableButton:hover {
+    background-image: url(images/conditions-button-highlight.png);
+}
+
+.tableButton:active {
+    background-image: url(images/conditions-button-pressed.png);
+}
+
+#deleteButton {
+    background-image: url(images/delete-button.png);
+    background-size: cover; /* Cover the entire button */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 2%;
+}
+
+#deleteButton:hover {
+    background-image: url(images/delete-button-hightlight.png);
+}
+
+#deleteButton:active {
+    background-image: url(images/delete-button-pressed.png);
+}
+
+/* FULL GRAY SCREEN MODAL */
+#grayModal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(113, 133, 166,0.6);
+    z-index: 19;
+}
+
+/* CUSOM CONDITION MODAL */
+#customConditionModal {
+    display: none;
+    position: absolute;
+    top: 220px;
+    left: 595px;
+    height: 250px;
+    width: 475px;
+    background-color: rgba(63,124,153);
+    z-index: 20;
+    color: white;
+}
